@@ -1,0 +1,561 @@
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+	vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	wait(1)
+	vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+game.StarterGui:SetCore("SendNotification", {
+	Title = "Full Version";
+	Text = "RB battles"; 
+	Duration = 10;
+})
+
+local WO = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Exit = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local NRpress = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local NRpressed = Instance.new("ImageLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local Loading = Instance.new("TextLabel")
+local Loaded = Instance.new("TextLabel")
+local Bringingyoutokeysystem = Instance.new("TextLabel")
+local _12 = Instance.new("TextLabel")
+local CheckpointMain = Instance.new("TextLabel")
+local TOSpress = Instance.new("TextButton")
+local TOS = Instance.new("Frame")
+local Exit_2 = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local keyverification = Instance.new("Frame")
+local TextButton_3 = Instance.new("TextButton")
+local TextLabel_13 = Instance.new("TextLabel")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local Loading_2 = Instance.new("TextLabel")
+local Loaded_2 = Instance.new("TextLabel")
+local BringingyoutoGUI = Instance.new("TextLabel")
+local _22 = Instance.new("TextLabel")
+local Checkpointkey = Instance.new("TextLabel")
+local Exit_3 = Instance.new("TextButton")
+local Allcheckpointscompleted = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local GetKey = Instance.new("TextButton")
+local Submit = Instance.new("TextButton")
+
+--Properties:
+
+WO.Name = "WO"
+WO.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+WO.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = WO
+Main.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Main.Position = UDim2.new(0.375770003, 0, 0.267530471, 0)
+Main.Size = UDim2.new(0, 282, 0, 187)
+Main.Active = true
+Main.Draggable = true
+
+Exit.Name = "Exit"
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
+Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.929077983, 0, -0.0695187226, 0)
+Exit.Size = UDim2.new(0, 30, 0, 30)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+Exit.MouseButton1Click:Connect(function()
+	Main:Destroy()
+end)
+
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.195035458, 0, 0.374331564, 0)
+Frame.Size = UDim2.new(0, 149, 0, 38)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.125085115, 0, 0.184210524, 0)
+TextLabel.Size = UDim2.new(0, 76, 0, 24)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "I have read the rules"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+NRpress.Name = "NRpress"
+NRpress.Parent = Frame
+NRpress.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NRpress.BorderSizePixel = 3
+NRpress.Position = UDim2.new(0.754984915, 0, 0.263157904, 0)
+NRpress.Size = UDim2.new(0, 18, 0, 18)
+NRpress.Font = Enum.Font.SourceSans
+NRpress.Text = ""
+NRpress.TextColor3 = Color3.fromRGB(0, 0, 0)
+NRpress.TextSize = 14.000
+NRpress.MouseButton1Click:Connect(function()
+	NRpressed.Visible = true
+	wait(0.25)
+	Loading.Visible = true
+	wait(2)
+	Loaded.Visible = true
+	Loading.Visible = false
+	wait(2)
+	Bringingyoutokeysystem.Visible = true
+	Loaded.Visible = false
+	wait(2)
+	keyverification.Visible = true
+	Main.Visible = false
+end)
+
+TextButton.Parent = Main
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.Position = UDim2.new(0.163120568, 0, 0.0427807495, 0)
+TextButton.Size = UDim2.new(0, 190, 0, 29)
+TextButton.Font = Enum.Font.Bangers
+TextButton.Text = "Piggy: Rb battles"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+
+TextLabel_2.Parent = Main
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.631205678, 0, 0.732620299, 0)
+TextLabel_2.Size = UDim2.new(0, 58, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "Verification system"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = Main
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.631205678, 0, 0.802138984, 0)
+TextLabel_3.Size = UDim2.new(0, 58, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "made by : /Meow/ #3684"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+
+NRpressed.Name = "NRpressed"
+NRpressed.Parent = Main
+NRpressed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NRpressed.BackgroundTransparency = 1.000
+NRpressed.Position = UDim2.new(0.567375839, 0, 0.374331564, 0)
+NRpressed.Size = UDim2.new(0, 32, 0, 32)
+NRpressed.Visible = false
+NRpressed.Image = "rbxassetid://2685266566"
+
+TextLabel_4.Parent = Main
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.262411356, 0, 0.636363626, 0)
+TextLabel_4.Size = UDim2.new(0, 139, 0, 39)
+TextLabel_4.Font = Enum.Font.SourceSans
+TextLabel_4.Text = "Please beware that any script leaking will get you banned!"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 13.000
+
+Loading.Name = "Loading"
+Loading.Parent = Main
+Loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading.BackgroundTransparency = 1.000
+Loading.Position = UDim2.new(0.340425551, 0, 0.5775401, 0)
+Loading.Size = UDim2.new(0, 77, 0, 18)
+Loading.Visible = false
+Loading.Font = Enum.Font.FredokaOne
+Loading.Text = "Loading"
+Loading.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loading.TextSize = 14.000
+
+Loaded.Name = "Loaded!"
+Loaded.Parent = Main
+Loaded.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loaded.BackgroundTransparency = 1.000
+Loaded.Position = UDim2.new(0.340425551, 0, 0.5775401, 0)
+Loaded.Size = UDim2.new(0, 77, 0, 18)
+Loaded.Visible = false
+Loaded.Font = Enum.Font.FredokaOne
+Loaded.Text = "Loaded!"
+Loaded.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loaded.TextSize = 14.000
+
+Bringingyoutokeysystem.Name = "Bringing you to key system"
+Bringingyoutokeysystem.Parent = Main
+Bringingyoutokeysystem.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Bringingyoutokeysystem.BackgroundTransparency = 1.000
+Bringingyoutokeysystem.Position = UDim2.new(0.340425551, 0, 0.5775401, 0)
+Bringingyoutokeysystem.Size = UDim2.new(0, 77, 0, 18)
+Bringingyoutokeysystem.Visible = false
+Bringingyoutokeysystem.Font = Enum.Font.FredokaOne
+Bringingyoutokeysystem.Text = "Bringing you to key system"
+Bringingyoutokeysystem.TextColor3 = Color3.fromRGB(255, 255, 255)
+Bringingyoutokeysystem.TextSize = 14.000
+
+_12.Name = "1/2"
+_12.Parent = Main
+_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_12.BackgroundTransparency = 1.000
+_12.Position = UDim2.new(0.191489458, 0, 0.245989308, 0)
+_12.Size = UDim2.new(0, 142, 0, 34)
+_12.Font = Enum.Font.SourceSans
+_12.Text = "(1/2)"
+_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+_12.TextSize = 14.000
+
+CheckpointMain.Name = "CheckpointMain"
+CheckpointMain.Parent = Main
+CheckpointMain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CheckpointMain.BackgroundTransparency = 1.000
+CheckpointMain.Position = UDim2.new(0.191489458, 0, 0.160427809, 0)
+CheckpointMain.Size = UDim2.new(0, 142, 0, 34)
+CheckpointMain.Font = Enum.Font.SourceSans
+CheckpointMain.Text = "Checkpoint:"
+CheckpointMain.TextColor3 = Color3.fromRGB(255, 255, 255)
+CheckpointMain.TextSize = 14.000
+
+TOSpress.Name = "TOSpress"
+TOSpress.Parent = Main
+TOSpress.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TOSpress.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TOSpress.BorderSizePixel = 4
+TOSpress.Position = UDim2.new(0.0531915985, 0, 0.802139044, 0)
+TOSpress.Size = UDim2.new(0, 126, 0, 23)
+TOSpress.Font = Enum.Font.SourceSans
+TOSpress.Text = "Please read the TOS"
+TOSpress.TextColor3 = Color3.fromRGB(255, 255, 255)
+TOSpress.TextSize = 14.000
+TOSpress.MouseButton1Click:Connect(function()
+	TOS.Visible = true
+	Main.Visible = false
+end)
+
+TOS.Name = "TOS"
+TOS.Parent = WO
+TOS.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TOS.Position = UDim2.new(0.363449603, 0, 0.121189021, 0)
+TOS.Size = UDim2.new(0, 318, 0, 359)
+TOS.Visible = false
+
+Exit_2.Name = "Exit"
+Exit_2.Parent = TOS
+Exit_2.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
+Exit_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exit_2.BorderSizePixel = 0
+Exit_2.Position = UDim2.new(0.92278868, 0, -0.0416635685, 0)
+Exit_2.Size = UDim2.new(0, 30, 0, 30)
+Exit_2.Font = Enum.Font.SourceSans
+Exit_2.Text = "X"
+Exit_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit_2.TextScaled = true
+Exit_2.TextSize = 14.000
+Exit_2.TextWrapped = true
+Exit_2.MouseButton1Click:Connect(function()
+	TOS.Visible = false
+	Main.Visible = true
+end)
+
+TextButton_2.Parent = TOS
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.Position = UDim2.new(0.163120568, 0, 0.0427807495, 0)
+TextButton_2.Size = UDim2.new(0, 190, 0, 29)
+TextButton_2.Font = Enum.Font.Bangers
+TextButton_2.Text = "Piggy: Rb battles: TOS"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 14.000
+
+TextLabel_5.Parent = TOS
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.185534596, 0, 0.11420612, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.LuckiestGuy
+TextLabel_5.Text = ":Please read before accepting:"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 19.000
+
+TextLabel_6.Parent = TOS
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.150943398, 0, 0.306406677, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.SourceSans
+TextLabel_6.Text = "Do not steal scripts"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 19.000
+
+TextLabel_7.Parent = TOS
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.144654095, 0, 0.420612812, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_7.Font = Enum.Font.SourceSans
+TextLabel_7.Text = "Please do not try bypass the key system!"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 19.000
+
+TextLabel_8.Parent = TOS
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.135220125, 0, 0.537604451, 0)
+TextLabel_8.Size = UDim2.new(0, 219, 0, 43)
+TextLabel_8.Font = Enum.Font.SourceSans
+TextLabel_8.Text = "Disagreeing with the TOS will make you "
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 19.000
+
+TextLabel_9.Parent = TOS
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.13522011, 0, 0.576601684, 0)
+TextLabel_9.Size = UDim2.new(0, 219, 0, 43)
+TextLabel_9.Font = Enum.Font.SourceSans
+TextLabel_9.Text = "unable to use PIGGY: RB BATTLES"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 19.000
+
+TextLabel_10.Parent = TOS
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.172955975, 0, 0.699164331, 0)
+TextLabel_10.Size = UDim2.new(0, 219, 0, 43)
+TextLabel_10.Font = Enum.Font.SourceSans
+TextLabel_10.Text = "Please join the group in discord to get notified"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextSize = 19.000
+
+TextLabel_11.Parent = TOS
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.172955975, 0, 0.735376, 0)
+TextLabel_11.Size = UDim2.new(0, 219, 0, 43)
+TextLabel_11.Font = Enum.Font.SourceSans
+TextLabel_11.Text = "about future updates!"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 19.000
+
+TextLabel_12.Parent = TOS
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.113207549, 0, 0.818941474, 0)
+TextLabel_12.Size = UDim2.new(0, 219, 0, 43)
+TextLabel_12.Font = Enum.Font.SourceSans
+TextLabel_12.Text = "/meow/ #3684"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextSize = 19.000
+
+keyverification.Name = "keyverification"
+keyverification.Parent = WO
+keyverification.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+keyverification.Position = UDim2.new(0.375770003, 0, 0.267530471, 0)
+keyverification.Size = UDim2.new(0, 282, 0, 187)
+keyverification.Visible = false
+
+TextButton_3.Parent = keyverification
+TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.Position = UDim2.new(0.163120568, 0, 0.0427807495, 0)
+TextButton_3.Size = UDim2.new(0, 190, 0, 29)
+TextButton_3.Font = Enum.Font.Bangers
+TextButton_3.Text = "Piggy: Rb battles"
+TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.TextSize = 14.000
+
+TextLabel_13.Parent = keyverification
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.631205678, 0, 0.732620299, 0)
+TextLabel_13.Size = UDim2.new(0, 58, 0, 50)
+TextLabel_13.Font = Enum.Font.SourceSans
+TextLabel_13.Text = "Verification system"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextSize = 14.000
+
+TextLabel_14.Parent = keyverification
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0.631205678, 0, 0.802138984, 0)
+TextLabel_14.Size = UDim2.new(0, 58, 0, 50)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "made by : /Meow/ #3684"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextSize = 14.000
+
+TextLabel_15.Parent = keyverification
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(0.262411356, 0, 0.636363626, 0)
+TextLabel_15.Size = UDim2.new(0, 139, 0, 39)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "Please beware that any script leaking will get you banned!"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextSize = 13.000
+
+Loading_2.Name = "Loading"
+Loading_2.Parent = keyverification
+Loading_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loading_2.BackgroundTransparency = 1.000
+Loading_2.Position = UDim2.new(0.340425551, 0, 0.5775401, 0)
+Loading_2.Size = UDim2.new(0, 77, 0, 18)
+Loading_2.Visible = false
+Loading_2.Font = Enum.Font.FredokaOne
+Loading_2.Text = "Loading"
+Loading_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loading_2.TextSize = 14.000
+
+Loaded_2.Name = "Loaded!"
+Loaded_2.Parent = keyverification
+Loaded_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Loaded_2.BackgroundTransparency = 1.000
+Loaded_2.Position = UDim2.new(0.340425551, 0, 0.5775401, 0)
+Loaded_2.Size = UDim2.new(0, 77, 0, 18)
+Loaded_2.Visible = false
+Loaded_2.Font = Enum.Font.FredokaOne
+Loaded_2.Text = "Loaded!"
+Loaded_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Loaded_2.TextSize = 14.000
+
+BringingyoutoGUI.Name = "Bringing you to GUI"
+BringingyoutoGUI.Parent = keyverification
+BringingyoutoGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BringingyoutoGUI.BackgroundTransparency = 1.000
+BringingyoutoGUI.Position = UDim2.new(0.340425551, 0, 0.5775401, 0)
+BringingyoutoGUI.Size = UDim2.new(0, 77, 0, 18)
+BringingyoutoGUI.Visible = false
+BringingyoutoGUI.Font = Enum.Font.FredokaOne
+BringingyoutoGUI.Text = "Bringing you to GUI"
+BringingyoutoGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+BringingyoutoGUI.TextSize = 14.000
+
+_22.Name = "2/2"
+_22.Parent = keyverification
+_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_22.BackgroundTransparency = 1.000
+_22.Position = UDim2.new(0.191489458, 0, 0.245989308, 0)
+_22.Size = UDim2.new(0, 142, 0, 34)
+_22.Font = Enum.Font.SourceSans
+_22.Text = "(2/2)"
+_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+_22.TextSize = 14.000
+
+Checkpointkey.Name = "Checkpointkey"
+Checkpointkey.Parent = keyverification
+Checkpointkey.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Checkpointkey.BackgroundTransparency = 1.000
+Checkpointkey.Position = UDim2.new(0.191489458, 0, 0.160427809, 0)
+Checkpointkey.Size = UDim2.new(0, 142, 0, 34)
+Checkpointkey.Font = Enum.Font.SourceSans
+Checkpointkey.Text = "Checkpoint:"
+Checkpointkey.TextColor3 = Color3.fromRGB(255, 255, 255)
+Checkpointkey.TextSize = 14.000
+
+Exit_3.Name = "Exit"
+Exit_3.Parent = keyverification
+Exit_3.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
+Exit_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exit_3.BorderSizePixel = 0
+Exit_3.Position = UDim2.new(0.929077983, 0, -0.0695187226, 0)
+Exit_3.Size = UDim2.new(0, 30, 0, 30)
+Exit_3.Font = Enum.Font.SourceSans
+Exit_3.Text = "X"
+Exit_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit_3.TextScaled = true
+Exit_3.TextSize = 14.000
+Exit_3.TextWrapped = true
+Exit_3.MouseButton1Click:Connect(function()
+	keyverification:Destroy()
+end)
+
+Allcheckpointscompleted.Name = "Allcheckpointscompleted"
+Allcheckpointscompleted.Parent = keyverification
+Allcheckpointscompleted.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Allcheckpointscompleted.BackgroundTransparency = 1.000
+Allcheckpointscompleted.Position = UDim2.new(0.340425551, 0, 0.5775401, 0)
+Allcheckpointscompleted.Size = UDim2.new(0, 77, 0, 18)
+Allcheckpointscompleted.Visible = false
+Allcheckpointscompleted.Font = Enum.Font.FredokaOne
+Allcheckpointscompleted.Text = "All the checkpoints have been completed!"
+Allcheckpointscompleted.TextColor3 = Color3.fromRGB(255, 255, 255)
+Allcheckpointscompleted.TextSize = 14.000
+
+TextBox.Parent = keyverification
+TextBox.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 3
+TextBox.Position = UDim2.new(0.127659589, 0, 0.390374303, 0)
+TextBox.Size = UDim2.new(0, 120, 0, 24)
+TextBox.Font = Enum.Font.Highway
+TextBox.Text = "Enter key"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+
+GetKey.Name = "GetKey"
+GetKey.Parent = keyverification
+GetKey.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+GetKey.BorderSizePixel = 2
+GetKey.Position = UDim2.new(0.581560194, 0, 0.459893048, 0)
+GetKey.Size = UDim2.new(0, 98, 0, 22)
+GetKey.Font = Enum.Font.SourceSans
+GetKey.Text = "Click to get key!"
+GetKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+GetKey.TextSize = 14.000
+GetKey.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "https://discord.gg/eEAvwEmF";
+		Text = "join the discord server to get the key!"; 
+		Duration = 30;
+	})
+end)
+
+Submit.Name = "Submit"
+Submit.Parent = keyverification
+Submit.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Submit.BorderSizePixel = 2
+Submit.Position = UDim2.new(0.581560194, 0, 0.310160428, 0)
+Submit.Size = UDim2.new(0, 98, 0, 22)
+Submit.Font = Enum.Font.SourceSans
+Submit.Text = "Submit!"
+Submit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Submit.TextSize = 14.000
+Submit.MouseButton1Click:Connect(function()
+	if TextBox.Text == "0045612fcb4aa30" then
+		wait(0.25)
+		Loading_2.Visible = true
+		wait(2)
+		Loaded_2.Visible = true
+		Loading_2.Visible = false
+		wait(2)
+		Allcheckpointscompleted.Visible = true
+		Loaded_2.Visible = false
+		wait(2)
+		BringingyoutoGUI.Visible = true
+		Allcheckpointscompleted.Visible = false
+		wait(2)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0piggy", true))()
+	end
+end)
