@@ -254,6 +254,8 @@ TOS.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 TOS.Position = UDim2.new(0.363449603, 0, 0.121189021, 0)
 TOS.Size = UDim2.new(0, 318, 0, 359)
 TOS.Visible = false
+TOS.Active = true
+TOS.Draggable = true
 
 Exit_2.Name = "Exit"
 Exit_2.Parent = TOS
@@ -369,6 +371,8 @@ keyverification.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
 keyverification.Position = UDim2.new(0.375770003, 0, 0.267530471, 0)
 keyverification.Size = UDim2.new(0, 282, 0, 187)
 keyverification.Visible = false
+keyverification.Active = true
+keyverification.Draggable = true
 
 TextButton_3.Parent = keyverification
 TextButton_3.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
