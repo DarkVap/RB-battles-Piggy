@@ -7,12 +7,11 @@ end)
 game.StarterGui:SetCore("SendNotification", {
 	Title = "Full Version";
 	Text = "RB battles"; 
-	Duration = 10;
+	Duration = 15;
 })
 
 local WO = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
-local Exit = Instance.new("TextButton")
 local Frame = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
 local NRpress = Instance.new("TextButton")
@@ -27,8 +26,9 @@ local Bringingyoutokeysystem = Instance.new("TextLabel")
 local _12 = Instance.new("TextLabel")
 local CheckpointMain = Instance.new("TextLabel")
 local TOSpress = Instance.new("TextButton")
+local Exit = Instance.new("TextButton")
 local TOS = Instance.new("Frame")
-local Exit_2 = Instance.new("TextButton")
+local ExitTOS = Instance.new("TextButton")
 local TextButton_2 = Instance.new("TextButton")
 local TextLabel_5 = Instance.new("TextLabel")
 local TextLabel_6 = Instance.new("TextLabel")
@@ -48,11 +48,84 @@ local Loaded_2 = Instance.new("TextLabel")
 local BringingyoutoGUI = Instance.new("TextLabel")
 local _22 = Instance.new("TextLabel")
 local Checkpointkey = Instance.new("TextLabel")
-local Exit_3 = Instance.new("TextButton")
+local Exitkeyverification = Instance.new("TextButton")
 local Allcheckpointscompleted = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
 local GetKey = Instance.new("TextButton")
 local Submit = Instance.new("TextButton")
+local AllBadges = Instance.new("ScrollingFrame")
+local TextButton_4 = Instance.new("TextButton")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local TextLabel_20 = Instance.new("TextLabel")
+local TextLabel_21 = Instance.new("TextLabel")
+local Executescriptpiggy = Instance.new("TextButton")
+local TextLabel_22 = Instance.new("TextLabel")
+local TextLabel_23 = Instance.new("TextLabel")
+local TextLabel_24 = Instance.new("TextLabel")
+local TextLabel_25 = Instance.new("TextLabel")
+local UnexecutableBuildaboatfortreasure = Instance.new("TextButton")
+local TextLabel_26 = Instance.new("TextLabel")
+local TextLabel_27 = Instance.new("TextLabel")
+local TextLabel_28 = Instance.new("TextLabel")
+local TextLabel_29 = Instance.new("TextLabel")
+local ExecutescriptWackywizards = Instance.new("TextButton")
+local TextLabel_30 = Instance.new("TextLabel")
+local TextLabel_31 = Instance.new("TextLabel")
+local TextLabel_32 = Instance.new("TextLabel")
+local TextLabel_33 = Instance.new("TextLabel")
+local ExecutescriptArsenal1 = Instance.new("TextButton")
+local ExecutescriptArsenal2 = Instance.new("TextButton")
+local TextLabel_34 = Instance.new("TextLabel")
+local TextLabel_35 = Instance.new("TextLabel")
+local TextLabel_36 = Instance.new("TextLabel")
+local TextLabel_37 = Instance.new("TextLabel")
+local UnexecutableMounteverest = Instance.new("TextButton")
+local TextLabel_38 = Instance.new("TextLabel")
+local TextLabel_39 = Instance.new("TextLabel")
+local TextLabel_40 = Instance.new("TextLabel")
+local TextLabel_41 = Instance.new("TextLabel")
+local UnexecutableSonicsimulator = Instance.new("TextButton")
+local TextLabel_42 = Instance.new("TextLabel")
+local TextLabel_43 = Instance.new("TextLabel")
+local TextLabel_44 = Instance.new("TextLabel")
+local TextLabel_45 = Instance.new("TextLabel")
+local ExecutescriptShoppingwars = Instance.new("TextButton")
+local TextLabel_46 = Instance.new("TextLabel")
+local TextLabel_47 = Instance.new("TextLabel")
+local TextLabel_48 = Instance.new("TextLabel")
+local TextLabel_49 = Instance.new("TextLabel")
+local TextLabel_50 = Instance.new("TextLabel")
+local UnexecutableAdoptme = Instance.new("TextButton")
+local TextLabel_51 = Instance.new("TextLabel")
+local ExecutescriptWLINFcoins = Instance.new("TextButton")
+local TextLabel_52 = Instance.new("TextLabel")
+local TextLabel_53 = Instance.new("TextLabel")
+local ExecutescriptFunkyfriday = Instance.new("TextButton")
+local TextLabel_54 = Instance.new("TextLabel")
+local TextLabel_55 = Instance.new("TextLabel")
+local TextLabel_56 = Instance.new("TextLabel")
+local TextLabel_57 = Instance.new("TextLabel")
+local TextLabel_58 = Instance.new("TextLabel")
+local Unexecutablesupergolf = Instance.new("TextButton")
+local TextLabel_59 = Instance.new("TextLabel")
+local TextLabel_60 = Instance.new("TextLabel")
+local TextLabel_61 = Instance.new("TextLabel")
+local TextLabel_62 = Instance.new("TextLabel")
+local TextLabel_63 = Instance.new("TextLabel")
+local TextLabel_64 = Instance.new("TextLabel")
+local TextLabel_65 = Instance.new("TextLabel")
+local TextLabel_66 = Instance.new("TextLabel")
+local TextLabel_67 = Instance.new("TextLabel")
+local ExitAllbadges = Instance.new("TextButton")
+local Unexecutablejailbreak = Instance.new("TextButton")
+local TextLabel_68 = Instance.new("TextLabel")
+local TextLabel_69 = Instance.new("TextLabel")
+local TextLabel_70 = Instance.new("TextLabel")
+local ExecutescriptWLfreeugc = Instance.new("TextButton")
+local Discordinvitelink = Instance.new("TextLabel")
 
 --Properties:
 
@@ -67,23 +140,6 @@ Main.Position = UDim2.new(0.375770003, 0, 0.267530471, 0)
 Main.Size = UDim2.new(0, 282, 0, 187)
 Main.Active = true
 Main.Draggable = true
-
-Exit.Name = "Exit"
-Exit.Parent = Main
-Exit.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
-Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exit.BorderSizePixel = 0
-Exit.Position = UDim2.new(0.929077983, 0, -0.0695187226, 0)
-Exit.Size = UDim2.new(0, 30, 0, 30)
-Exit.Font = Enum.Font.SourceSans
-Exit.Text = "X"
-Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
-Exit.TextScaled = true
-Exit.TextSize = 14.000
-Exit.TextWrapped = true
-Exit.MouseButton1Click:Connect(function()
-	Main:Destroy()
-end)
 
 Frame.Parent = Main
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -131,7 +187,7 @@ TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.Position = UDim2.new(0.163120568, 0, 0.0427807495, 0)
 TextButton.Size = UDim2.new(0, 190, 0, 29)
 TextButton.Font = Enum.Font.Bangers
-TextButton.Text = "Piggy: Rb battles"
+TextButton.Text = "Rb battles: All badges"
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton.TextSize = 14.000
 
@@ -248,6 +304,23 @@ TOSpress.MouseButton1Click:Connect(function()
 	Main.Visible = false
 end)
 
+Exit.Name = "Exit"
+Exit.Parent = Main
+Exit.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
+Exit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exit.BorderSizePixel = 0
+Exit.Position = UDim2.new(0.929077983, 0, -0.0695187226, 0)
+Exit.Size = UDim2.new(0, 30, 0, 30)
+Exit.Font = Enum.Font.SourceSans
+Exit.Text = "X"
+Exit.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exit.TextScaled = true
+Exit.TextSize = 14.000
+Exit.TextWrapped = true
+Exit.MouseButton1Click:Connect(function()
+	Main:Destroy()
+end)
+
 TOS.Name = "TOS"
 TOS.Parent = WO
 TOS.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
@@ -257,20 +330,20 @@ TOS.Visible = false
 TOS.Active = true
 TOS.Draggable = true
 
-Exit_2.Name = "Exit"
-Exit_2.Parent = TOS
-Exit_2.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
-Exit_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exit_2.BorderSizePixel = 0
-Exit_2.Position = UDim2.new(0.92278868, 0, -0.0416635685, 0)
-Exit_2.Size = UDim2.new(0, 30, 0, 30)
-Exit_2.Font = Enum.Font.SourceSans
-Exit_2.Text = "X"
-Exit_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Exit_2.TextScaled = true
-Exit_2.TextSize = 14.000
-Exit_2.TextWrapped = true
-Exit_2.MouseButton1Click:Connect(function()
+ExitTOS.Name = "ExitTOS"
+ExitTOS.Parent = TOS
+ExitTOS.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
+ExitTOS.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ExitTOS.BorderSizePixel = 0
+ExitTOS.Position = UDim2.new(0.92278868, 0, -0.0416635685, 0)
+ExitTOS.Size = UDim2.new(0, 30, 0, 30)
+ExitTOS.Font = Enum.Font.SourceSans
+ExitTOS.Text = "X"
+ExitTOS.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExitTOS.TextScaled = true
+ExitTOS.TextSize = 14.000
+ExitTOS.TextWrapped = true
+ExitTOS.MouseButton1Click:Connect(function()
 	TOS.Visible = false
 	Main.Visible = true
 end)
@@ -281,7 +354,7 @@ TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_2.Position = UDim2.new(0.163120568, 0, 0.0427807495, 0)
 TextButton_2.Size = UDim2.new(0, 190, 0, 29)
 TextButton_2.Font = Enum.Font.Bangers
-TextButton_2.Text = "Piggy: Rb battles: TOS"
+TextButton_2.Text = "Rb battles: All badges: TOS"
 TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_2.TextSize = 14.000
 
@@ -380,7 +453,7 @@ TextButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_3.Position = UDim2.new(0.163120568, 0, 0.0427807495, 0)
 TextButton_3.Size = UDim2.new(0, 190, 0, 29)
 TextButton_3.Font = Enum.Font.Bangers
-TextButton_3.Text = "Piggy: Rb battles"
+TextButton_3.Text = "Rb battles: All badges"
 TextButton_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_3.TextSize = 14.000
 
@@ -472,20 +545,20 @@ Checkpointkey.Text = "Checkpoint:"
 Checkpointkey.TextColor3 = Color3.fromRGB(255, 255, 255)
 Checkpointkey.TextSize = 14.000
 
-Exit_3.Name = "Exit"
-Exit_3.Parent = keyverification
-Exit_3.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
-Exit_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Exit_3.BorderSizePixel = 0
-Exit_3.Position = UDim2.new(0.929077983, 0, -0.0695187226, 0)
-Exit_3.Size = UDim2.new(0, 30, 0, 30)
-Exit_3.Font = Enum.Font.SourceSans
-Exit_3.Text = "X"
-Exit_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-Exit_3.TextScaled = true
-Exit_3.TextSize = 14.000
-Exit_3.TextWrapped = true
-Exit_3.MouseButton1Click:Connect(function()
+Exitkeyverification.Name = "Exitkeyverification"
+Exitkeyverification.Parent = keyverification
+Exitkeyverification.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
+Exitkeyverification.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Exitkeyverification.BorderSizePixel = 0
+Exitkeyverification.Position = UDim2.new(0.929077983, 0, -0.0695187226, 0)
+Exitkeyverification.Size = UDim2.new(0, 30, 0, 30)
+Exitkeyverification.Font = Enum.Font.SourceSans
+Exitkeyverification.Text = "X"
+Exitkeyverification.TextColor3 = Color3.fromRGB(0, 0, 0)
+Exitkeyverification.TextScaled = true
+Exitkeyverification.TextSize = 14.000
+Exitkeyverification.TextWrapped = true
+Exitkeyverification.MouseButton1Click:Connect(function()
 	keyverification:Destroy()
 end)
 
@@ -531,8 +604,8 @@ GetKey.MouseButton1Click:Connect(function()
 	end)
 	game.StarterGui:SetCore("SendNotification", {
 		Title = "https://discord.gg/eEAvwEmF";
-		Text = "join the discord server to get the key!"; 
-		Duration = 30;
+		Text = "join the server to get the key!"; 
+		Duration = 15;
 	})
 end)
 
@@ -560,6 +633,1034 @@ Submit.MouseButton1Click:Connect(function()
 		BringingyoutoGUI.Visible = true
 		Allcheckpointscompleted.Visible = false
 		wait(2)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0piggy", true))()
+		AllBadges.Visible = true
 	end
 end)
+
+AllBadges.Name = "AllBadges"
+AllBadges.Parent = WO
+AllBadges.Active = true
+AllBadges.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+AllBadges.Position = UDim2.new(0.286447644, 0, 0.0228658523, 0)
+AllBadges.Size = UDim2.new(0, 446, 0, 386)
+AllBadges.Visible = false
+AllBadges.CanvasSize = UDim2.new(0, 0, 5, 0)
+AllBadges.Active = true
+AllBadges.Draggable = true
+
+TextButton_4.Parent = AllBadges
+TextButton_4.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.Position = UDim2.new(0.238505661, 0, 0.0130551411, 0)
+TextButton_4.Size = UDim2.new(0, 190, 0, 29)
+TextButton_4.Font = Enum.Font.Bangers
+TextButton_4.Text = "Rb battles: All badges"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 14.000
+
+TextLabel_16.Parent = AllBadges
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(0.0156950708, 0, 0.608223975, 0)
+TextLabel_16.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_16.Font = Enum.Font.LuckiestGuy
+TextLabel_16.Text = "Join our server! "
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextSize = 14.000
+
+TextLabel_17.Parent = AllBadges
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.257847548, 0, 0.0262957327, 0)
+TextLabel_17.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_17.Font = Enum.Font.Fantasy
+TextLabel_17.Text = "All current discoverable RB battles badges+scripts have been listed below:"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextSize = 14.000
+
+TextLabel_18.Parent = AllBadges
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(1.49011612e-08, 0, 0.0425304919, 0)
+TextLabel_18.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_18.Font = Enum.Font.LuckiestGuy
+TextLabel_18.Text = "Piggy: RB battles badge"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextSize = 14.000
+
+TextLabel_19.Parent = AllBadges
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Position = UDim2.new(0.0627802834, 0, 0.048932936, 0)
+TextLabel_19.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_19.Font = Enum.Font.LuckiestGuy
+TextLabel_19.Text = "Credits : ToraIsMe (YT) (Discord)"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextSize = 14.000
+
+TextLabel_20.Parent = AllBadges
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Position = UDim2.new(0.228699565, 0, 0.0564786717, 0)
+TextLabel_20.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_20.Font = Enum.Font.LuckiestGuy
+TextLabel_20.Text = "An incredibly easy script to use. Lets you teleport to"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextSize = 14.000
+
+TextLabel_21.Parent = AllBadges
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.Position = UDim2.new(0.219730943, 0, 0.062423788, 0)
+TextLabel_21.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_21.Font = Enum.Font.LuckiestGuy
+TextLabel_21.Text = "all items + where to use those items."
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.TextSize = 14.000
+
+Executescriptpiggy.Name = "Executescript(piggy)"
+Executescriptpiggy.Parent = AllBadges
+Executescriptpiggy.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Executescriptpiggy.Position = UDim2.new(0.188340813, 0, 0.0792278945, 0)
+Executescriptpiggy.Size = UDim2.new(0, 239, 0, 20)
+Executescriptpiggy.Font = Enum.Font.SpecialElite
+Executescriptpiggy.Text = "Execute script! (Piggy)"
+Executescriptpiggy.TextColor3 = Color3.fromRGB(255, 255, 255)
+Executescriptpiggy.TextSize = 14.000
+Executescriptpiggy.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loading piggy badge GUI";
+		Text = ""; 
+		Duration = 15;
+	})
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0piggy", true))()
+	wait(0.1)
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loaded piggy badge GUI";
+		Text = "credits to ToraIsMe"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_22.Parent = AllBadges
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.Position = UDim2.new(0.145739928, 0, 0.0850609913, 0)
+TextLabel_22.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_22.Font = Enum.Font.LuckiestGuy
+TextLabel_22.Text = "Build a boat for treasure: RB battles badge"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextSize = 14.000
+
+TextLabel_23.Parent = AllBadges
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.BackgroundTransparency = 1.000
+TextLabel_23.Position = UDim2.new(0.0627802834, 0, 0.0942073241, 0)
+TextLabel_23.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_23.Font = Enum.Font.LuckiestGuy
+TextLabel_23.Text = "Credits : /Meow/ #3684 (Discord)"
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.TextSize = 14.000
+
+TextLabel_24.Parent = AllBadges
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.BackgroundTransparency = 1.000
+TextLabel_24.Position = UDim2.new(0.215246648, 0, 0.102210365, 0)
+TextLabel_24.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_24.Font = Enum.Font.LuckiestGuy
+TextLabel_24.Text = "There is no current known way to obtain this badge."
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.TextSize = 14.000
+
+TextLabel_25.Parent = AllBadges
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.BackgroundTransparency = 1.000
+TextLabel_25.Position = UDim2.new(0.183856502, 0, 0.10838414, 0)
+TextLabel_25.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_25.Font = Enum.Font.LuckiestGuy
+TextLabel_25.Text = "Maybe you can be the one to discover the badge!"
+TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.TextSize = 14.000
+
+UnexecutableBuildaboatfortreasure.Name = "Unexecutable(Buildaboatfortreasure)"
+UnexecutableBuildaboatfortreasure.Parent = AllBadges
+UnexecutableBuildaboatfortreasure.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UnexecutableBuildaboatfortreasure.Position = UDim2.new(0.230941698, 0, 0.122970521, 0)
+UnexecutableBuildaboatfortreasure.Size = UDim2.new(0, 200, 0, 20)
+UnexecutableBuildaboatfortreasure.Font = Enum.Font.SpecialElite
+UnexecutableBuildaboatfortreasure.Text = "Unexecutable script"
+UnexecutableBuildaboatfortreasure.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnexecutableBuildaboatfortreasure.TextSize = 14.000
+UnexecutableBuildaboatfortreasure.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Sorry you cannot get this badge yet";
+		Text = "Please wait until you can get this badge"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_26.Parent = AllBadges
+TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.BackgroundTransparency = 1.000
+TextLabel_26.Position = UDim2.new(0.080717504, 0, 0.127362818, 0)
+TextLabel_26.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_26.Font = Enum.Font.LuckiestGuy
+TextLabel_26.Text = "Wacky Wizards: RB battles badge"
+TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.TextSize = 14.000
+
+TextLabel_27.Parent = AllBadges
+TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.BackgroundTransparency = 1.000
+TextLabel_27.Position = UDim2.new(0.080717504, 0, 0.13445121, 0)
+TextLabel_27.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_27.Font = Enum.Font.LuckiestGuy
+TextLabel_27.Text = "Credits : /Meow/ #3684 (Discord)"
+TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.TextSize = 14.000
+
+TextLabel_28.Parent = AllBadges
+TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.BackgroundTransparency = 1.000
+TextLabel_28.Position = UDim2.new(0.251121074, 0, 0.143597573, 0)
+TextLabel_28.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_28.Font = Enum.Font.LuckiestGuy
+TextLabel_28.Text = "An incredibly easy script to use. Lets you get the badge "
+TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.TextSize = 14.000
+
+TextLabel_29.Parent = AllBadges
+TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.BackgroundTransparency = 1.000
+TextLabel_29.Position = UDim2.new(0.208520189, 0, 0.152057931, 0)
+TextLabel_29.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_29.Font = Enum.Font.LuckiestGuy
+TextLabel_29.Text = "with no sweat! Let's you teleport to the end!"
+TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.TextSize = 14.000
+
+ExecutescriptWackywizards.Name = "Executescript(Wackywizards)"
+ExecutescriptWackywizards.Parent = AllBadges
+ExecutescriptWackywizards.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ExecutescriptWackywizards.Position = UDim2.new(0.197309434, 0, 0.166346788, 0)
+ExecutescriptWackywizards.Size = UDim2.new(0, 239, 0, 20)
+ExecutescriptWackywizards.Font = Enum.Font.SpecialElite
+ExecutescriptWackywizards.Text = "Execute script! (Wacky Wizards)"
+ExecutescriptWackywizards.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutescriptWackywizards.TextSize = 14.000
+ExecutescriptWackywizards.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loading Wacky Wizards GUI";
+		Text = ""; 
+		Duration = 15;
+	})
+	wait(1)
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Sorry there are some problems with this script";
+		Text = "Please contact the developer!"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_30.Parent = AllBadges
+TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.BackgroundTransparency = 1.000
+TextLabel_30.Position = UDim2.new(0.0179372355, 0, 0.169207364, 0)
+TextLabel_30.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_30.Font = Enum.Font.LuckiestGuy
+TextLabel_30.Text = "Arsenal: RB battles badge"
+TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.TextSize = 14.000
+
+TextLabel_31.Parent = AllBadges
+TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.BackgroundTransparency = 1.000
+TextLabel_31.Position = UDim2.new(0.0807175189, 0, 0.175152451, 0)
+TextLabel_31.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_31.Font = Enum.Font.LuckiestGuy
+TextLabel_31.Text = "Credits : ToraIsMe (YT) (Discord)"
+TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.TextSize = 14.000
+
+TextLabel_32.Parent = AllBadges
+TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.BackgroundTransparency = 1.000
+TextLabel_32.Position = UDim2.new(0.18609871, 0, 0.18407011, 0)
+TextLabel_32.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_32.Font = Enum.Font.LuckiestGuy
+TextLabel_32.Text = "1.Bring the bots to you and kill them! (ToraIsMe)"
+TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.TextSize = 14.000
+
+TextLabel_33.Parent = AllBadges
+TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.BackgroundTransparency = 1.000
+TextLabel_33.Position = UDim2.new(0.251121104, 0, 0.192073196, 0)
+TextLabel_33.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_33.Font = Enum.Font.LuckiestGuy
+TextLabel_33.Text = "2.Noclip and walk right through the invisible walls! (/Meow/)"
+TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.TextSize = 13.000
+
+ExecutescriptArsenal1.Name = "Executescript(Arsenal1)"
+ExecutescriptArsenal1.Parent = AllBadges
+ExecutescriptArsenal1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ExecutescriptArsenal1.Position = UDim2.new(-0.0269058235, 0, 0.208877236, 0)
+ExecutescriptArsenal1.Size = UDim2.new(0, 239, 0, 20)
+ExecutescriptArsenal1.Font = Enum.Font.SpecialElite
+ExecutescriptArsenal1.Text = "Execute script! (Arsenal/1)"
+ExecutescriptArsenal1.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutescriptArsenal1.TextSize = 14.000
+ExecutescriptArsenal1.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loading arsenal badge GUI/1";
+		Text = ""; 
+		Duration = 15;
+	})
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0asenal", true))()
+	wait(0.1)
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loaded arsenal badge GUI/1";
+		Text = "Credits to ToraIsMe"; 
+		Duration = 15;
+	})
+end)
+
+ExecutescriptArsenal2.Name = "Executescript(Arsenal2)"
+ExecutescriptArsenal2.Parent = AllBadges
+ExecutescriptArsenal2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ExecutescriptArsenal2.Position = UDim2.new(0.466367722, 0, 0.208419934, 0)
+ExecutescriptArsenal2.Size = UDim2.new(0, 239, 0, 20)
+ExecutescriptArsenal2.Font = Enum.Font.SpecialElite
+ExecutescriptArsenal2.Text = "Execute script! (Arsenal/2)"
+ExecutescriptArsenal2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutescriptArsenal2.TextSize = 14.000
+ExecutescriptArsenal2.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loading arsenal badge GUI/2";
+		Text = ""; 
+		Duration = 15;
+	})
+	-------Insert here
+	wait(1)
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "arsenal badge GUI/2 unloadable";
+		Text = "Sorry, this script has glitched out. Please wait for the developer to patch it!"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_34.Parent = AllBadges
+TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.BackgroundTransparency = 1.000
+TextLabel_34.Position = UDim2.new(0.145739943, 0, 0.214710414, 0)
+TextLabel_34.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_34.Font = Enum.Font.LuckiestGuy
+TextLabel_34.Text = "Mount Everest role play: RB battles badge"
+TextLabel_34.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.TextSize = 14.000
+
+TextLabel_35.Parent = AllBadges
+TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.BackgroundTransparency = 1.000
+TextLabel_35.Position = UDim2.new(0.0964125767, 0, 0.221341446, 0)
+TextLabel_35.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_35.Font = Enum.Font.LuckiestGuy
+TextLabel_35.Text = "Credits : /Meow/ #3684 (Discord)"
+TextLabel_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.TextSize = 14.000
+
+TextLabel_36.Parent = AllBadges
+TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.BackgroundTransparency = 1.000
+TextLabel_36.Position = UDim2.new(0.215246648, 0, 0.229115799, 0)
+TextLabel_36.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_36.Font = Enum.Font.LuckiestGuy
+TextLabel_36.Text = "There is no current known way to obtain this badge."
+TextLabel_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.TextSize = 14.000
+
+TextLabel_37.Parent = AllBadges
+TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.BackgroundTransparency = 1.000
+TextLabel_37.Position = UDim2.new(0.208520159, 0, 0.235739082, 0)
+TextLabel_37.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_37.Font = Enum.Font.LuckiestGuy
+TextLabel_37.Text = "Maybe you can be the one to discover the badge!"
+TextLabel_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.TextSize = 14.000
+
+UnexecutableMounteverest.Name = "Unexecutable(Mounteverest)"
+UnexecutableMounteverest.Parent = AllBadges
+UnexecutableMounteverest.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UnexecutableMounteverest.Position = UDim2.new(0.251121074, 0, 0.253077209, 0)
+UnexecutableMounteverest.Size = UDim2.new(0, 200, 0, 20)
+UnexecutableMounteverest.Font = Enum.Font.SpecialElite
+UnexecutableMounteverest.Text = "Unexecutable script"
+UnexecutableMounteverest.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnexecutableMounteverest.TextSize = 14.000
+UnexecutableMounteverest.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Sorry you cannot get this badge yet";
+		Text = "Please wait until you can get this badge"; 
+		Duration = 15;
+	})
+end)
+
+
+TextLabel_38.Parent = AllBadges
+TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.BackgroundTransparency = 1.000
+TextLabel_38.Position = UDim2.new(0.0807175115, 0, 0.257698208, 0)
+TextLabel_38.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_38.Font = Enum.Font.LuckiestGuy
+TextLabel_38.Text = "Sonic simulator: RB battles badge"
+TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.TextSize = 14.000
+
+TextLabel_39.Parent = AllBadges
+TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.BackgroundTransparency = 1.000
+TextLabel_39.Position = UDim2.new(0.080717504, 0, 0.265015244, 0)
+TextLabel_39.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_39.Font = Enum.Font.LuckiestGuy
+TextLabel_39.Text = "Credits : /Meow/ #3684 (Discord)"
+TextLabel_39.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.TextSize = 14.000
+
+TextLabel_40.Parent = AllBadges
+TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.BackgroundTransparency = 1.000
+TextLabel_40.Position = UDim2.new(0.215246618, 0, 0.271646321, 0)
+TextLabel_40.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_40.Font = Enum.Font.LuckiestGuy
+TextLabel_40.Text = "There is no current known way to obtain this badge."
+TextLabel_40.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.TextSize = 14.000
+
+TextLabel_41.Parent = AllBadges
+TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.BackgroundTransparency = 1.000
+TextLabel_41.Position = UDim2.new(0.186098635, 0, 0.277812213, 0)
+TextLabel_41.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_41.Font = Enum.Font.LuckiestGuy
+TextLabel_41.Text = "Maybe you can be the one to discover the badge!"
+TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.TextSize = 14.000
+
+UnexecutableSonicsimulator.Name = "Unexecutable(Sonicsimulator)"
+UnexecutableSonicsimulator.Parent = AllBadges
+UnexecutableSonicsimulator.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UnexecutableSonicsimulator.Position = UDim2.new(0.251121104, 0, 0.296522319, 0)
+UnexecutableSonicsimulator.Size = UDim2.new(0, 200, 0, 20)
+UnexecutableSonicsimulator.Font = Enum.Font.SpecialElite
+UnexecutableSonicsimulator.Text = "Unexecutable script"
+UnexecutableSonicsimulator.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnexecutableSonicsimulator.TextSize = 14.000
+UnexecutableSonicsimulator.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Sorry you cannot get this badge yet";
+		Text = "Please wait until you can get this badge"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_42.Parent = AllBadges
+TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.BackgroundTransparency = 1.000
+TextLabel_42.Position = UDim2.new(0.078475371, 0, 0.300686032, 0)
+TextLabel_42.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_42.Font = Enum.Font.LuckiestGuy
+TextLabel_42.Text = "Shopping wars: RB battles badge"
+TextLabel_42.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.TextSize = 14.000
+
+TextLabel_43.Parent = AllBadges
+TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_43.BackgroundTransparency = 1.000
+TextLabel_43.Position = UDim2.new(0.078475371, 0, 0.308689058, 0)
+TextLabel_43.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_43.Font = Enum.Font.LuckiestGuy
+TextLabel_43.Text = "Credits : ToraIsMe (YT) (Discord)"
+TextLabel_43.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_43.TextSize = 14.000
+
+TextLabel_44.Parent = AllBadges
+TextLabel_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_44.BackgroundTransparency = 1.000
+TextLabel_44.Position = UDim2.new(0.251121044, 0, 0.317370147, 0)
+TextLabel_44.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_44.Font = Enum.Font.LuckiestGuy
+TextLabel_44.Text = "A script that lets you do all sorts of stuff, teleportation"
+TextLabel_44.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_44.TextSize = 14.000
+
+TextLabel_45.Parent = AllBadges
+TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_45.BackgroundTransparency = 1.000
+TextLabel_45.Position = UDim2.new(0.215246603, 0, 0.323315263, 0)
+TextLabel_45.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_45.Font = Enum.Font.LuckiestGuy
+TextLabel_45.Text = "and everything needed to get the badge!"
+TextLabel_45.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_45.TextSize = 14.000
+
+ExecutescriptShoppingwars.Name = "Executescript(Shoppingwars)"
+ExecutescriptShoppingwars.Parent = AllBadges
+ExecutescriptShoppingwars.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ExecutescriptShoppingwars.Position = UDim2.new(0.197309434, 0, 0.339441299, 0)
+ExecutescriptShoppingwars.Size = UDim2.new(0, 239, 0, 20)
+ExecutescriptShoppingwars.Font = Enum.Font.SpecialElite
+ExecutescriptShoppingwars.Text = "Execute script! (Shopping wars)"
+ExecutescriptShoppingwars.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutescriptShoppingwars.TextSize = 14.000
+ExecutescriptShoppingwars.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loading shopping wars badge GUI";
+		Text = ""; 
+		Duration = 15;
+	})
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0shopping", true))()
+	wait(0.1)
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loaded shopping wars badge GUI";
+		Text = "Credits to ToraIsMe"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_46.Parent = AllBadges
+TextLabel_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_46.BackgroundTransparency = 1.000
+TextLabel_46.Position = UDim2.new(0.0493273586, 0, 0.343902528, 0)
+TextLabel_46.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_46.Font = Enum.Font.LuckiestGuy
+TextLabel_46.Text = "Adopt me: RB battles badge"
+TextLabel_46.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_46.TextSize = 14.000
+
+TextLabel_47.Parent = AllBadges
+TextLabel_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_47.BackgroundTransparency = 1.000
+TextLabel_47.Position = UDim2.new(0.0605381392, 0, 0.352591425, 0)
+TextLabel_47.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_47.Font = Enum.Font.LuckiestGuy
+TextLabel_47.Text = "Credits : /Meow/ #3684 (Discord)"
+TextLabel_47.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_47.TextSize = 14.000
+
+TextLabel_48.Parent = AllBadges
+TextLabel_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_48.BackgroundTransparency = 1.000
+TextLabel_48.Position = UDim2.new(0.230941683, 0, 0.360137194, 0)
+TextLabel_48.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_48.Font = Enum.Font.LuckiestGuy
+TextLabel_48.Text = "There is no current known way to obtain this badge."
+TextLabel_48.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_48.TextSize = 14.000
+
+TextLabel_49.Parent = AllBadges
+TextLabel_49.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_49.BackgroundTransparency = 1.000
+TextLabel_49.Position = UDim2.new(0.204035863, 0, 0.366760463, 0)
+TextLabel_49.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_49.Font = Enum.Font.LuckiestGuy
+TextLabel_49.Text = "Maybe you can be the one to discover the badge!"
+TextLabel_49.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_49.TextSize = 14.000
+
+TextLabel_50.Parent = AllBadges
+TextLabel_50.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_50.BackgroundTransparency = 1.000
+TextLabel_50.Position = UDim2.new(0.0605381168, 0, 0.390091449, 0)
+TextLabel_50.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_50.Font = Enum.Font.LuckiestGuy
+TextLabel_50.Text = "Funky friday: RB battles badge"
+TextLabel_50.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_50.TextSize = 14.000
+
+UnexecutableAdoptme.Name = "Unexecutable(Adoptme)"
+UnexecutableAdoptme.Parent = AllBadges
+UnexecutableAdoptme.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+UnexecutableAdoptme.Position = UDim2.new(0.230941728, 0, 0.38272661, 0)
+UnexecutableAdoptme.Size = UDim2.new(0, 200, 0, 20)
+UnexecutableAdoptme.Font = Enum.Font.SpecialElite
+UnexecutableAdoptme.Text = "Unexecutable script"
+UnexecutableAdoptme.TextColor3 = Color3.fromRGB(255, 255, 255)
+UnexecutableAdoptme.TextSize = 14.000
+UnexecutableAdoptme.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Sorry you cannot get this badge yet";
+		Text = "Please wait until you can get this badge"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_51.Parent = AllBadges
+TextLabel_51.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_51.BackgroundTransparency = 1.000
+TextLabel_51.Position = UDim2.new(0.0807175189, 0, 0.395579278, 0)
+TextLabel_51.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_51.Font = Enum.Font.LuckiestGuy
+TextLabel_51.Text = "Credits : /Meow/ #3684"
+TextLabel_51.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_51.TextSize = 14.000
+
+ExecutescriptWLINFcoins.Name = "Executescript(WLINFcoins)"
+ExecutescriptWLINFcoins.Parent = AllBadges
+ExecutescriptWLINFcoins.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ExecutescriptWLINFcoins.Position = UDim2.new(0.464125603, 0, 0.548435152, 0)
+ExecutescriptWLINFcoins.Size = UDim2.new(0, 239, 0, 20)
+ExecutescriptWLINFcoins.Font = Enum.Font.SpecialElite
+ExecutescriptWLINFcoins.Text = "Execute script! (WL+Inf coins)"
+ExecutescriptWLINFcoins.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutescriptWLINFcoins.TextSize = 14.000
+ExecutescriptWLINFcoins.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loading Walmart land inf coins";
+		Text = ""; 
+		Duration = 15;
+	})
+	wait(1)
+	game:GetService("ReplicatedStorage").Events.CosmeticObyy.GiveTokensCosmeticObby:FireServer(999999);
+	wait(0.1)
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "You have recieved 999999 tokens!";
+		Text = "Credit to /Meow/ #3684"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_52.Parent = AllBadges
+TextLabel_52.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_52.BackgroundTransparency = 1.000
+TextLabel_52.Position = UDim2.new(0.257847518, 0, 0.40243113, 0)
+TextLabel_52.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_52.Font = Enum.Font.LuckiestGuy
+TextLabel_52.Text = "A script that lets you do all sorts of stuff, Finish obby"
+TextLabel_52.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_52.TextSize = 14.000
+
+TextLabel_53.Parent = AllBadges
+TextLabel_53.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_53.BackgroundTransparency = 1.000
+TextLabel_53.Position = UDim2.new(0.251121074, 0, 0.408833563, 0)
+TextLabel_53.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_53.Font = Enum.Font.LuckiestGuy
+TextLabel_53.Text = "and auto play! To get the badge!"
+TextLabel_53.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_53.TextSize = 14.000
+
+ExecutescriptFunkyfriday.Name = "Executescript(Funkyfriday)"
+ExecutescriptFunkyfriday.Parent = AllBadges
+ExecutescriptFunkyfriday.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ExecutescriptFunkyfriday.Position = UDim2.new(0.181614369, 0, 0.424502254, 0)
+ExecutescriptFunkyfriday.Size = UDim2.new(0, 239, 0, 20)
+ExecutescriptFunkyfriday.Font = Enum.Font.SpecialElite
+ExecutescriptFunkyfriday.Text = "Execute script! (Funky Friday)"
+ExecutescriptFunkyfriday.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutescriptFunkyfriday.TextSize = 14.000
+ExecutescriptFunkyfriday.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loading Funky friday badge GUI";
+		Text = ""; 
+		Duration = 15;
+	})
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0funky", true))()
+	wait(0.1)
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loaded Funky friday badge GUI";
+		Text = "Credits to ToraIsMe + Wally"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_54.Parent = AllBadges
+TextLabel_54.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_54.BackgroundTransparency = 1.000
+TextLabel_54.Position = UDim2.new(0.0627802759, 0, 0.427134126, 0)
+TextLabel_54.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_54.Font = Enum.Font.LuckiestGuy
+TextLabel_54.Text = "Super golf: RB battles badge"
+TextLabel_54.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_54.TextSize = 14.000
+
+TextLabel_55.Parent = AllBadges
+TextLabel_55.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_55.BackgroundTransparency = 1.000
+TextLabel_55.Position = UDim2.new(0.080717504, 0, 0.433307946, 0)
+TextLabel_55.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_55.Font = Enum.Font.LuckiestGuy
+TextLabel_55.Text = "Credits : /Meow/ #3684 (Discord)"
+TextLabel_55.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_55.TextSize = 14.000
+
+TextLabel_56.Parent = AllBadges
+TextLabel_56.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_56.BackgroundTransparency = 1.000
+TextLabel_56.Position = UDim2.new(0.260089666, 0, 0.441760391, 0)
+TextLabel_56.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_56.Font = Enum.Font.LuckiestGuy
+TextLabel_56.Text = "Sorry, there are no available scripts for this currently."
+TextLabel_56.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_56.TextSize = 14.000
+
+TextLabel_57.Parent = AllBadges
+TextLabel_57.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_57.BackgroundTransparency = 1.000
+TextLabel_57.Position = UDim2.new(0.260089666, 0, 0.448620141, 0)
+TextLabel_57.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_57.Font = Enum.Font.LuckiestGuy
+TextLabel_57.Text = "I will be working on one. I will release it as soon as"
+TextLabel_57.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_57.TextSize = 14.000
+
+TextLabel_58.Parent = AllBadges
+TextLabel_58.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_58.BackgroundTransparency = 1.000
+TextLabel_58.Position = UDim2.new(0.260089666, 0, 0.455937207, 0)
+TextLabel_58.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_58.Font = Enum.Font.LuckiestGuy
+TextLabel_58.Text = "possible."
+TextLabel_58.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_58.TextSize = 14.000
+
+Unexecutablesupergolf.Name = "Unexecutable(supergolf)"
+Unexecutablesupergolf.Parent = AllBadges
+Unexecutablesupergolf.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Unexecutablesupergolf.Position = UDim2.new(0.251121104, 0, 0.47098881, 0)
+Unexecutablesupergolf.Size = UDim2.new(0, 200, 0, 20)
+Unexecutablesupergolf.Font = Enum.Font.SpecialElite
+Unexecutablesupergolf.Text = "Unexecutable script"
+Unexecutablesupergolf.TextColor3 = Color3.fromRGB(255, 255, 255)
+Unexecutablesupergolf.TextSize = 14.000
+Unexecutablesupergolf.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Sorry this script is currently unavailable";
+		Text = "Please wait , i am currently working on a script and will release it as soon as possible"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_59.Parent = AllBadges
+TextLabel_59.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_59.BackgroundTransparency = 1.000
+TextLabel_59.Position = UDim2.new(0.0493273623, 0, 0.474695086, 0)
+TextLabel_59.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_59.Font = Enum.Font.LuckiestGuy
+TextLabel_59.Text = "Jail break: RB battles badge"
+TextLabel_59.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_59.TextSize = 14.000
+
+TextLabel_60.Parent = AllBadges
+TextLabel_60.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_60.BackgroundTransparency = 1.000
+TextLabel_60.Position = UDim2.new(0.239910305, 0, 0.490243882, 0)
+TextLabel_60.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_60.Font = Enum.Font.LuckiestGuy
+TextLabel_60.Text = "There is no current known way to obtain this badge."
+TextLabel_60.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_60.TextSize = 14.000
+
+TextLabel_61.Parent = AllBadges
+TextLabel_61.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_61.BackgroundTransparency = 1.000
+TextLabel_61.Position = UDim2.new(0.0964125693, 0, 0.483155489, 0)
+TextLabel_61.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_61.Font = Enum.Font.LuckiestGuy
+TextLabel_61.Text = "Credits : /Meow/ #3684 (Discord)"
+TextLabel_61.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_61.TextSize = 14.000
+
+TextLabel_62.Parent = AllBadges
+TextLabel_62.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_62.BackgroundTransparency = 1.000
+TextLabel_62.Position = UDim2.new(0.239910305, 0, 0.49755314, 0)
+TextLabel_62.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_62.Font = Enum.Font.LuckiestGuy
+TextLabel_62.Text = "Maybe you can be the one to discover the badge!"
+TextLabel_62.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_62.TextSize = 14.000
+
+TextLabel_63.Parent = AllBadges
+TextLabel_63.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_63.BackgroundTransparency = 1.000
+TextLabel_63.Position = UDim2.new(0.275784731, 0, 0.573925138, 0)
+TextLabel_63.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_63.Font = Enum.Font.LuckiestGuy
+TextLabel_63.Text = "These scripts aren't all made by me. I have written out "
+TextLabel_63.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_63.TextSize = 14.000
+
+TextLabel_64.Parent = AllBadges
+TextLabel_64.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_64.BackgroundTransparency = 1.000
+TextLabel_64.Position = UDim2.new(0.257847518, 0, 0.57895565, 0)
+TextLabel_64.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_64.Font = Enum.Font.LuckiestGuy
+TextLabel_64.Text = "credits. Please ask me on discord if you have any"
+TextLabel_64.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_64.TextSize = 14.000
+
+TextLabel_65.Parent = AllBadges
+TextLabel_65.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_65.BackgroundTransparency = 1.000
+TextLabel_65.Position = UDim2.new(0.275784731, 0, 0.58581543, 0)
+TextLabel_65.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_65.Font = Enum.Font.LuckiestGuy
+TextLabel_65.Text = "Suggestions! I will try to reply back to you as soon as "
+TextLabel_65.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_65.TextSize = 14.000
+
+TextLabel_66.Parent = AllBadges
+TextLabel_66.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_66.BackgroundTransparency = 1.000
+TextLabel_66.Position = UDim2.new(0.260089666, 0, 0.592217863, 0)
+TextLabel_66.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_66.Font = Enum.Font.LuckiestGuy
+TextLabel_66.Text = "possible!"
+TextLabel_66.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_66.TextSize = 14.000
+
+TextLabel_67.Parent = AllBadges
+TextLabel_67.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_67.BackgroundTransparency = 1.000
+TextLabel_67.Position = UDim2.new(0.257847488, 0, 0.624687433, 0)
+TextLabel_67.Size = UDim2.new(0, 200, 0, 49)
+TextLabel_67.Font = Enum.Font.LuckiestGuy
+TextLabel_67.Text = "No copyright intended."
+TextLabel_67.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_67.TextSize = 14.000
+
+ExitAllbadges.Name = "ExitAllbadges"
+ExitAllbadges.Parent = AllBadges
+ExitAllbadges.BackgroundColor3 = Color3.fromRGB(235, 0, 0)
+ExitAllbadges.Size = UDim2.new(0, 30, 0, 30)
+ExitAllbadges.Font = Enum.Font.SourceSans
+ExitAllbadges.Text = "X"
+ExitAllbadges.TextColor3 = Color3.fromRGB(0, 0, 0)
+ExitAllbadges.TextScaled = true
+ExitAllbadges.TextSize = 14.000
+ExitAllbadges.TextWrapped = true
+ExitAllbadges.MouseButton1Click:Connect(function()
+	AllBadges:Destroy()
+end)
+
+Unexecutablejailbreak.Name = "Unexecutable(jailbreak)"
+Unexecutablejailbreak.Parent = AllBadges
+Unexecutablejailbreak.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Unexecutablejailbreak.Position = UDim2.new(0.257847548, 0, 0.513062, 0)
+Unexecutablejailbreak.Size = UDim2.new(0, 200, 0, 20)
+Unexecutablejailbreak.Font = Enum.Font.SpecialElite
+Unexecutablejailbreak.Text = "Unexecutable script"
+Unexecutablejailbreak.TextColor3 = Color3.fromRGB(255, 255, 255)
+Unexecutablejailbreak.TextSize = 14.000
+Unexecutablejailbreak.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Sorry you cannot get this badge yet";
+		Text = "Please wait until you can get this badge"; 
+		Duration = 15;
+	})
+end)
+
+TextLabel_68.Parent = AllBadges
+TextLabel_68.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_68.BackgroundTransparency = 1.000
+TextLabel_68.Position = UDim2.new(0.121076234, 0, 0.519512177, 0)
+TextLabel_68.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_68.Font = Enum.Font.LuckiestGuy
+TextLabel_68.Text = "Walmart land: free ugc item+Inf coins"
+TextLabel_68.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_68.TextSize = 14.000
+
+TextLabel_69.Parent = AllBadges
+TextLabel_69.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_69.BackgroundTransparency = 1.000
+TextLabel_69.Position = UDim2.new(0.080717504, 0, 0.525914609, 0)
+TextLabel_69.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_69.Font = Enum.Font.LuckiestGuy
+TextLabel_69.Text = "Credits : ToraIsMe (YT) (Discord)"
+TextLabel_69.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_69.TextSize = 14.000
+
+TextLabel_70.Parent = AllBadges
+TextLabel_70.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_70.BackgroundTransparency = 1.000
+TextLabel_70.Position = UDim2.new(0.215246618, 0, 0.532774389, 0)
+TextLabel_70.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_70.Font = Enum.Font.LuckiestGuy
+TextLabel_70.Text = "Gain access to all of the snowmen and inf coins!"
+TextLabel_70.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_70.TextSize = 14.000
+
+ExecutescriptWLfreeugc.Name = "Executescript(WLfreeugc)"
+ExecutescriptWLfreeugc.Parent = AllBadges
+ExecutescriptWLfreeugc.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ExecutescriptWLfreeugc.Position = UDim2.new(-0.0538116395, 0, 0.548435152, 0)
+ExecutescriptWLfreeugc.Size = UDim2.new(0, 239, 0, 20)
+ExecutescriptWLfreeugc.Font = Enum.Font.SpecialElite
+ExecutescriptWLfreeugc.Text = "Execute script! (WL+UGC)"
+ExecutescriptWLfreeugc.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecutescriptWLfreeugc.TextSize = 14.000
+ExecutescriptWLfreeugc.MouseButton1Click:Connect(function()
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loading Walmart land GUI";
+		Text = ""; 
+		Duration = 15;
+	})
+	wait(1)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe2/ToraIsMe2/main/0walmart2", true))()
+	wait(0.1)
+	local vu = game:GetService("VirtualUser")
+	game:GetService("Players").LocalPlayer.Idled:connect(function()
+		vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+		wait(1)
+		vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+	end)
+	game.StarterGui:SetCore("SendNotification", {
+		Title = "Loaded Walmart land GUI";
+		Text = "Credit to ToraIsMe"; 
+		Duration = 15;
+	})
+end)
+
+Discordinvitelink.Name = "Discordinvitelink"
+Discordinvitelink.Parent = AllBadges
+Discordinvitelink.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Discordinvitelink.BackgroundTransparency = 1.000
+Discordinvitelink.Position = UDim2.new(0.401345283, 0, 0.608223975, 0)
+Discordinvitelink.Size = UDim2.new(0, 200, 0, 49)
+Discordinvitelink.Font = Enum.Font.LuckiestGuy
+Discordinvitelink.Text = "https://discord.gg/eEAvwEmF"
+Discordinvitelink.TextColor3 = Color3.fromRGB(255, 255, 255)
+Discordinvitelink.TextSize = 14.000
